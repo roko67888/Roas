@@ -26,7 +26,7 @@ object PokerEngine {
     }
     fun equity(hero:List<Card>, board:List<Card>, trials:Int=3000):Int {
         if(hero.size!=2 || board.size>5) return -1
-        val deck=(2..14).flatMap{r->(0..3).map{Card(r,it)}}.toMutableList()
+        val deck=(2..14).flatMap{r->(0..3).map { s -> Card(r, s) }}.toMutableList()
         deck.removeAll(hero+board)
         var wins=0; var ties=0; val rng=Random.Default
         repeat(trials){
