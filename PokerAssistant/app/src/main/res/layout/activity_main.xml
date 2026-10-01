@@ -1,0 +1,16 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="Poker Assistant" android:textSize="28sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<TextView android:text="Equity • HUD • Player stats" android:layout_marginBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<Spinner android:id="@+id/tableMode" android:layout_width="match_parent" android:layout_height="48dp"/>
+<EditText android:id="@+id/heroCards" android:hint="Tvoje karte: Ah Kd" android:layout_width="match_parent" android:layout_height="56dp"/>
+<EditText android:id="@+id/boardCards" android:hint="Board: Qh 7c 2s" android:layout_width="match_parent" android:layout_height="56dp"/>
+<EditText android:id="@+id/villainRange" android:hint="Protivnički range: 22+, AJs+, KQs" android:layout_width="match_parent" android:layout_height="56dp"/>
+<Button android:id="@+id/calcButton" android:text="Izračunaj equity" android:layout_width="match_parent" android:layout_height="52dp"/>
+<TextView android:id="@+id/equityText" android:text="Equity: —" android:textSize="22sp" android:textStyle="bold" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/recommendation" android:text="Preporuka: —" android:textSize="18sp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<Button android:id="@+id/captureButton" android:text="Pokreni čitanje ekrana" android:layout_width="match_parent" android:layout_height="52dp"/>
+<Button android:id="@+id/overlayButton" android:text="Dozvoli HUD preko druge aplikacije" android:layout_width="match_parent" android:layout_height="52dp"/>
+<TextView android:id="@+id/ocrText" android:text="OCR: —" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/statsText" android:text="Statistike: nema podataka" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
